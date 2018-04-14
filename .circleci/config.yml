@@ -18,7 +18,7 @@ jobs:
 
   py35:
     docker: [{image: 'circleci/python:3.5'}]
-    environment: {TOXENV: py35-django18,py35-django19,py35-django110,py35-django111,py35-django20}
+    environment: {TOXENV: 'py35-django{18,19,110,111,20}'}
     <<: *steps
 
   py34:
